@@ -1,24 +1,29 @@
-# README
+# Votes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## What is this project about?
 
-Things you may want to cover:
+Votes is a tool to allow people to join a voting game, much like the Oscar. The
+idea was born with the Oscar in mind, as a way to provide employees of a
+company to interact and have fun.
 
-* Ruby version
+## Dependencies
 
-* System dependencies
+It was built and tested with ruby 2.6.0 and rails 5.2.2. Make sure you have
+PostgreSQL installed as well.
 
-* Configuration
+## To install
 
-* Database creation
+1. Clone the repository
+2. Run the setup
 
-* Database initialization
+```
+  bin/setup
+```
 
-* How to run the test suite
+## To run the tests
 
-* Services (job queues, cache servers, search engines, etc.)
+The tests are built with `Rspec`. Go to the terminal and run:
 
-* Deployment instructions
-
-* ...
+```
+  bin/rspec
+```
