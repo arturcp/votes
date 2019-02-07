@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CategoriesController < ApplicationController
+class PollsController < ApplicationController
   def index
   end
 end
