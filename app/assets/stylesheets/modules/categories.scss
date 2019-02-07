@@ -1,0 +1,31 @@
+.introduction {
+  font-family: arial;
+  font-size: 18px;
+
+  p.special::first-letter {
+    color: $primary-color;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+  }
+}
+
+.first-letter1 {
+  font-size: 60px;
+}
+
+#categories-list {
+  margin-top: 40px;
+}
+
+.centered-content {
+  border-left: 1px solid $line-color;
+  border-right: 1px solid $line-color;
+  border-radius: 15px;
+  padding: 20px !important;
+  background-color: #f3f3f3;
+}
