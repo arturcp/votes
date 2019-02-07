@@ -15,7 +15,3 @@
 //= require rails-ujs
 //= require activestorage
 //= require_tree .
-
-$(document).on('ready page:load', function() {
-  page.dispatch();
-});

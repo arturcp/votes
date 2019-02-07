@@ -1,0 +1,46 @@
+.logo-wrapper {
+  font-size: 20px;
+  text-indent: 10px;
+  color: #000;
+}
+
+.logout-button,
+.user-name,
+.ranking-link {
+  float: right;
+  margin-right: 10px;
+  color: #000;
+
+  a {
+    color: #000;
+  }
+}
+
+.nav-wrapper.user {
+  a {
+    color: #000;
+  }
+}
+
+#logo {
+  width: 60px;
+  height: 55px;
+  background: image-url('vote.png') no-repeat 10px 5px;
+  background-size: 50px 50px;
+}
+
+nav {
+  background-color: $primary-color;
+}
+
+.cd-auto-hide-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  transition: transform .5s;
+}
+.cd-auto-hide-header.is-hidden {
+  transform: translateY(-100%);
+}
