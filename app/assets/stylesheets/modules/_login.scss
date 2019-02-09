@@ -1,0 +1,61 @@
+body.devise-body {
+  width: 100%;
+  background-color: $primary-color;
+  color: #fff;
+  background: image_url('login-bg.png');
+}
+
+.cd-main-content {
+  margin: 100px 50px;
+
+  label {
+    color: #000;
+    font-size: 20px;
+  }
+
+  input[type="submit"] {
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: $primary-color;
+    margin-bottom: 25px;
+  }
+
+  input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $primary-color;
+    box-shadow: 0 1px 0 0 $primary-color;
+  }
+
+  #container {
+    margin: 0 auto;
+    width: 30%;
+
+    @media #{$medium-and-down} {
+      width: 50%;
+    }
+
+    @media #{$small-and-down} {
+      width: 80%;
+    }
+  }
+
+  label {
+    color: #fff;
+  }
+
+  input[type="submit"] {
+    padding: 10px;
+  }
+
+  input[type="password"],
+  input[type="email"] {
+    text-indent: 10px;
+  }
+
+  a {
+    color: $primary-color;
+  }
+
+  #new_user .field:nth-child(5) {
+    display: none;
+  }
+}

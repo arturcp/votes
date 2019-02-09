@@ -13,6 +13,24 @@
             </li>
           </ul>
         <% end %>
+
+        <section class="right">
+          <% if user_signed_in? %>
+            <div class="logout-button">
+              <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+            </div>
+            <div class="ranking-link">
+              Ranking |
+            </div>
+            <div class="user-name">
+              Hello, <%= current_user.name %> |
+            </div>
+          <% else %>
+            <%= link_to('Sign up', new_user_registration_path, class: 'da-link') %>
+
+            <%= link_to('or login', new_user_session_path)  %>
+          <% end %>
+        </section>
       </div>
     </nav>
   </div>
