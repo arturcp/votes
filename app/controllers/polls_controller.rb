@@ -2,5 +2,6 @@
 
 class PollsController < ApplicationController
   def index
+    @polls = Poll.opened.sort
   end
 end

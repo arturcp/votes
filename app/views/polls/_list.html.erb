@@ -1,7 +1,9 @@
 <div class="row" id="polls-list">
-  <div class="col s12">
-    <div class="collection">
-      <a href="#!" class="collection-item">Oscar</a>
+  <% polls.each do |poll| %>
+    <div class="col s12">
+      <div class="collection">
+        <a href="#!" class="collection-item"><%= poll.name %></a>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>
