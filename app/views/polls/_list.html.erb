@@ -2,7 +2,7 @@
   <% polls.each do |poll| %>
     <div class="col s12">
       <div class="collection">
-        <a href="#!" class="collection-item"><%= poll.name %></a>
+        <%= link_to poll.name, poll_path(poll), class: 'collection-item' %>
       </div>
     </div>
   <% end %>
