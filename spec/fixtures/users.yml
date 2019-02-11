@@ -1,0 +1,9 @@
+john_doe:
+  name: 'John Doe'
+  email: 'john.doe@youse.com.br'
+jane_roe:
+  name: 'Jane Roe'
+  email: 'jane.roe@youse.com.br'
+admin:
+  name: 'Edgard Allan Poe'
+  email: 'edgard.allan.poe@hotmail.com'

@@ -4,5 +4,10 @@ Rails.application.routes.draw do
 
   resources :polls, only: [:index, :show]
   resources :votes, only: [:create]
+
+  namespace :admin do
+    resources :results, only: :create
+  end
+
   root to: 'polls#index'
 end

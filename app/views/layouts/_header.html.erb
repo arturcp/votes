@@ -1,4 +1,4 @@
-<header id="header" class="page-topbar cd-auto-hide-header">
+<header id="header" class="page-topbar cd-auto-hide-header <%= 'admin-header' if current_user && is_admin?(current_user, @poll) %>">
   <div class="navbar-fixed">
     <nav class="navbar-color">
       <div class="nav-wrapper">

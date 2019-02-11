@@ -56,3 +56,17 @@ nav {
 main {
   margin-top: 100px;
 }
+
+.admin-header {
+  .navbar-color {
+    background-color: $admin-primary-color !important;
+
+    .logo-wrapper,
+    .logout-button,
+    .user-name,
+    .ranking-link,
+    a {
+      color: #fff !important;
+    }
+  }
+}
