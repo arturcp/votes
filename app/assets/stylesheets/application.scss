@@ -5,9 +5,9 @@
 @import 'variables';
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 
+@import 'modules/devise';
 @import 'modules/header';
 @import 'modules/helpers';
-@import 'modules/login';
 @import 'modules/overlay';
 @import 'modules/polls';
 @import 'modules/styled_checkbox';

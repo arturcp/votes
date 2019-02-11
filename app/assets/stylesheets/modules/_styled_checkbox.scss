@@ -21,7 +21,7 @@
 
   // Box hover
   &:hover + label:before {
-    background: #f35429;
+    background: $primary-color;
   }
 
   // Box focus
@@ -31,7 +31,7 @@
 
   // Box checked
   &:checked + label:before {
-    background: #f35429;
+    background: $primary-color;
   }
 
   // Disabled state label.
@@ -52,16 +52,16 @@
     position: absolute;
     left: 5px;
     top: 9px;
-    background: white;
+    background: #000;
     width: 2px;
     height: 2px;
     box-shadow:
-      2px 0 0 white,
-      4px 0 0 white,
-      4px -2px 0 white,
-      4px -4px 0 white,
-      4px -6px 0 white,
-      4px -8px 0 white;
+      2px 0 0 #000,
+      4px 0 0 #000,
+      4px -2px 0 #000,
+      4px -4px 0 #000,
+      4px -6px 0 #000,
+      4px -8px 0 #000;
     transform: rotate(45deg);
   }
 }

@@ -10,13 +10,9 @@
   </head>
 
   <body class="devise-body">
-    <%= render 'layouts/header' %>
-
     <main class="cd-main-content">
       <%= yield %>
     </main>
-
-    <%= render 'layouts/overlay' %>
 
     <% if flash[:alert] || flash[:notice] %>
       <script>
