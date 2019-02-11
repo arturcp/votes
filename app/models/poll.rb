@@ -7,4 +7,5 @@ class Poll < ApplicationRecord
   friendly_id :name, use: :slugged
 
   has_many :categories
+  belongs_to :user
 end
