@@ -1,4 +1,4 @@
-# frozen_stringliteral: true
+# frozen_string_literal: true
 
 class Poll < ApplicationRecord
   extend FriendlyId
