@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  APPROVED_DOMAINS = ['youse.com.br', 'youse.co', 'helloyouser.com.br']
+  APPROVED_DOMAINS = ['youse.com.br', 'youse.co', 'helloyouser.com.br'].freeze
 
   validates :email, presence: true, if: :domain_check
   has_many :polls
