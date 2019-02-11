@@ -1,0 +1,29 @@
+.poll-header {
+  h1 {
+    font-family: Futura,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: $primary-color;
+    text-shadow: #928b8b 2px 3px 3px;
+    text-transform: uppercase;
+    display: inline;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .header-divider {
+    width: 800px;
+    background: transparent url(//ddoie2e1uy9qo.cloudfront.net/images/Divider-Desktop.png) no-repeat 50%;
+    height: 2px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 42em) {
+  .header-divider {
+    width: 740px;
+    background: transparent url(//ddoie2e1uy9qo.cloudfront.net/images/Divider-Tablet.png) no-repeat 50%;
+    height: 2px;
+    display: inline-block;
+  }
+}

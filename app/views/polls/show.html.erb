@@ -1,8 +1,9 @@
 <%= content_tag :section do %>
-  <h1>Welcome to the <%= @poll.name %></h1>
-
   <% if @poll.categories.load.size > 0 %>
-    <h2><%= @poll.name %> nominees</h2>
+    <div class="poll-header center-align">
+      <h1><%= @poll.name %> nominees</h1>
+      <div class="header-divider"></div>
+    </div>
 
     <% @poll.categories.each do |category| %>
       <h5><%= category.name %></h5>
