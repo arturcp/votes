@@ -5,4 +5,5 @@ class Category < ApplicationRecord
   friendly_id :name, use: :slugged
 
   belongs_to :poll
+  has_many :candidates
 end
