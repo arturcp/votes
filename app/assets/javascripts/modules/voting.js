@@ -18,20 +18,39 @@ fn.prepare = function() {
   });
 
   this.buttons.on('click', function() {
-    var card = $(this).parents('[data-candidate]'),
-        category = card.parents('[data-category]');
+    var candidate = $(this).parents('[data-candidate]'),
+        category = candidate.parents('[data-category]');
 
     category.find('.card.selected').removeClass('selected');
     category.find('.card').addClass('blur');
 
-    card.addClass('selected');
-    card.removeClass('blur');
+    candidate.addClass('selected');
+    candidate.removeClass('blur');
+
+    self.castVote(category, candidate);
   });
 };
 
 fn.hideButtons = function() {
   this.buttons.hide();
 };
+
+fn.castVote = function(category, candidate) {
+  $.ajax({
+    type: 'POST',
+    url: category.attr('data-update-url'),
+    async: false,
+    data: {
+      category_id: category.attr('data-category'),
+      candidate_id: candidate.attr('data-candidate')
+    },
+    error: function(data) {
+      M.toast({ html: 'Hum... something didn\'t work as expected' });
+    },
+    success: function(data) {
+    }
+  });
+}
 
 $(document).ready(function() {
   var candidates = new Candidates();

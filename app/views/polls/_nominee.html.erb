@@ -1,4 +1,4 @@
-<div class="card" data-candidate>
+<div class="card <%= 'blur' if blur %> <%= 'selected' if select %>" data-candidate=<%= candidate.id %>>
   <div class="card-image">
     <%= image_tag candidate.image_url %>
 

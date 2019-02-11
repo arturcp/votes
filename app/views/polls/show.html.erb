@@ -6,13 +6,15 @@
     </div>
 
     <% @poll.categories.each do |category| %>
-      <section data-category data-update-url="<%= is_admin?(current_user, @poll) ? admin_results_path : votes_path %>">
+      <section data-category="<%= category.id %>" data-update-url="<%= is_admin?(current_user, @poll) ? admin_results_path : votes_path %>">
         <h5><%= category.name %></h5>
+        <% presenter = VotesPresenter.new(current_user, category) %>
 
         <div class="row">
           <% category.candidates.each do |candidate| %>
             <div class="col s12 m6 l3">
-              <%= render 'nominee', candidate: candidate %>
+              <% selected = presenter.voted_in_candidate?(candidate.id) %>
+              <%= render 'nominee', candidate: candidate, blur: presenter.voted? && !selected, select: selected %>
             </div>
           <% end %>
         </div>
