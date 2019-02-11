@@ -29,3 +29,13 @@
   padding: 20px !important;
   background-color: #f3f3f3;
 }
+
+.card {
+  &.selected {
+    opacity: 1;
+  }
+
+  &.blur {
+    opacity: 0.3;
+  }
+}

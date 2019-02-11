@@ -6,15 +6,17 @@
     </div>
 
     <% @poll.categories.each do |category| %>
-      <h5><%= category.name %></h5>
+      <section data-category>
+        <h5><%= category.name %></h5>
 
-      <div class="row">
-        <% category.candidates.each do |candidate| %>
-          <div class="col s12 m6 l3">
-            <%= render 'nominee', candidate: candidate %>
-          </div>
-        <% end %>
-      </div>
+        <div class="row">
+          <% category.candidates.each do |candidate| %>
+            <div class="col s12 m6 l3">
+              <%= render 'nominee', candidate: candidate %>
+            </div>
+          <% end %>
+        </div>
+      </section>
     <% end %>
   <% end %>
 <% end %>

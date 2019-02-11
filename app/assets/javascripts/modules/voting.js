@@ -16,6 +16,17 @@ fn.prepare = function() {
       $(this).find('[data-vote-button]').show();
     })
   });
+
+  this.buttons.on('click', function() {
+    var card = $(this).parents('[data-candidate]'),
+        category = card.parents('[data-category]');
+
+    category.find('.card.selected').removeClass('selected');
+    category.find('.card').addClass('blur');
+
+    card.addClass('selected');
+    card.removeClass('blur');
+  });
 };
 
 fn.hideButtons = function() {
