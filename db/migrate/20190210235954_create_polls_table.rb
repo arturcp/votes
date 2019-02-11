@@ -4,6 +4,8 @@ class CreatePollsTable < ActiveRecord::Migration[5.2]
       t.string :name, nil: false
       t.datetime :poll_date
       t.integer :status, default: 1
+
+      t.timestamps
     end
   end
 end
