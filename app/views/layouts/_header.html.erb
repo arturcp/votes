@@ -3,8 +3,14 @@
     <nav class="navbar-color">
       <div class="nav-wrapper">
         <%= link_to root_path do %>
-          <div class="left" id="logo">
-          </div>
+          <% if ENV['LOGO'] %>
+            <div class="left" id="external-logo">
+              <img src="<%= ENV['LOGO'] %>" />
+            </div>
+          <% else %>
+            <div class="left" id="logo">
+            </div>
+          <% end %>
           <ul class="left">
             <li class="main-logo">
               <h3 class="logo-wrapper hide-on-small-only">
