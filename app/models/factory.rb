@@ -4,7 +4,7 @@ class Factory
   def self.build_oscar_2019
     return if Poll.exists?(name: 'Oscar 2019')
     user = User.create!(name: 'Oscar admin', email: ENV['ADMIN_EMAIL'], password: ENV['ADMIN_PASSWORD'])
-    poll = Poll.create!(name: 'Oscar 2019', poll_date: Date.parse('2019-02-24'), user: user)
+    poll = Poll.create!(name: 'Oscar 2019', poll_date: Date.parse('2019-02-24 14:00'), user: user)
 
     best_picture = poll.categories.create!(name: 'Best picture', points: 4)
     best_picture.candidates.create!(name: 'Black Panther', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07134409/e0e0b612a16885b02848f38ead529fffaed84d06d9651396218a2515a73ea823-370x492.jpg')

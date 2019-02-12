@@ -10,6 +10,6 @@ class Poll < ApplicationRecord
   belongs_to :user
 
   def expired?
-    Time.current > poll_date || closed?
+    Time.current.utc > poll_date.utc || closed?
   end
 end
