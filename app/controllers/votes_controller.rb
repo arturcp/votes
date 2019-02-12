@@ -2,7 +2,7 @@
 
 class VotesController < ApplicationController
   def create
-    if admin?
+    if current_user.admin?(category)
       head :forbidden
     else
       save_vote
@@ -22,10 +22,6 @@ class VotesController < ApplicationController
 
   def category
     @category ||= Category.find(category_id)
-  end
-
-  def admin?
-    category.poll.user_id == current_user.id
   end
 
   def current_vote

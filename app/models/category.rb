@@ -6,4 +6,5 @@ class Category < ApplicationRecord
 
   belongs_to :poll
   has_many :candidates
+  belongs_to :candidate
 end

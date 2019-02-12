@@ -16,4 +16,10 @@ class User < ApplicationRecord
       errors.add(:email, "is not from a valid domain")
     end
   end
+
+  def admin?(category)
+    return false unless category
+
+    category.poll.user_id == self.id
+  end
 end
