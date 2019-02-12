@@ -3,7 +3,13 @@
     <div class="poll-header center-align">
       <h1><%= @poll.name %> nominees</h1>
       <div class="header-divider"></div>
+      <p>
+        <%= link_to ranking_path(@poll), class: 'waves-effect waves-light btn-small', id: 'ranking-button', target: '_blank' do %>
+          <i class="material-icons right">poll</i>Ranking
+        <% end %>
+      </p>
     </div>
+
 
     <% @poll.categories.order(:created_at).each do |category| %>
       <section data-category="<%= category.id %>" data-update-url="<%= is_admin?(current_user, @poll) ? admin_results_path : votes_path %>">

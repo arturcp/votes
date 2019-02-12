@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :polls, only: [:index, :show]
   resources :votes, only: [:create]
+  resources :rankings, only: :show, param: :poll_id
 
   namespace :admin do
     resources :results, only: :create

@@ -7,4 +7,6 @@ class Category < ApplicationRecord
   belongs_to :poll
   has_many :candidates
   belongs_to :candidate, optional: true
+
+  validates :points, presence: true
 end
