@@ -16,6 +16,8 @@ class VotesPresenter < SimpleDelegator
     votes.select { |vote| vote.candidate_id == candidate_id }.size > 0
   end
 
+  private
+
   def votes
     @votes ||= Vote.where(category_id: category.id, user_id: user.id)
   end

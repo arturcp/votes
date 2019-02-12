@@ -13,11 +13,11 @@ class VotesController < ApplicationController
   private
 
   def category_id
-    @category_id ||= params['category_id']
+    @category_id ||= params['category_id'].to_i
   end
 
   def candidate_id
-    @candidate_id ||= params['candidate_id']
+    @candidate_id ||= params['candidate_id'].to_i
   end
 
   def category
