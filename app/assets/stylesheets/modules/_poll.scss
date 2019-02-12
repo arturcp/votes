@@ -14,22 +14,11 @@
   text-indent: 10px;
 }
 
-@media (min-width: 62.5em) {
-  .header-divider {
-    width: 800px;
-    background: transparent url(//ddoie2e1uy9qo.cloudfront.net/images/Divider-Desktop.png) no-repeat 50%;
-    height: 2px;
-    display: inline-block;
-  }
-}
-
-@media (min-width: 42em) {
-  .header-divider {
-    width: 740px;
-    background: transparent url(//ddoie2e1uy9qo.cloudfront.net/images/Divider-Tablet.png) no-repeat 50%;
-    height: 2px;
-    display: inline-block;
-  }
+.header-divider {
+  width: 100%;
+  background: transparent url(//ddoie2e1uy9qo.cloudfront.net/images/Divider-Desktop.png) no-repeat 50%;
+  height: 2px;
+  display: inline-block;
 }
 
 #ranking-button {
