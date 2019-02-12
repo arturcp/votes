@@ -5,7 +5,7 @@ module Admin
     def create
       if current_user.admin?(category)
         category.update(candidate_id: candidate_id)
-        Ranking.calculate(category)
+        Ranking.distribute_points_for_category(category)
 
         head :no_content
       else

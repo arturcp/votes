@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Score</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% ranking_users.each_with_index do |ranking_user, index| %>
+      <tr>
+        <td>
+          <% if index <= 2 %>
+            <i class="material-icons">filter_<%= index + 1 %></i>
+          <% else %>
+            <%= index + 1 %>
+          <% end %>
+        </td>
+        <td><%= ranking_user.user_name %></td>
+        <td><%= ranking_user.score %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

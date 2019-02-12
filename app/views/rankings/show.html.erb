@@ -4,7 +4,18 @@
     <div class="header-divider"></div>
   </div>
   <p>&nbsp;</p>
-  <div class="alert center-align">
-    <b>Wait!</b> The ranking is not ready yet. Be patient, young padawan ;)
-  </div>
+
+  <% if @ranking.size > 0 %>
+    <% if @partial_result %>
+      <div class="alert alert-info center-align">
+        This ranking is <b>partial!</b> The full ranking will be available soon.
+      </div>
+    <% end %>
+
+    <%= render 'table', ranking_users: @ranking %>
+  <% else %>
+    <div class="alert center-align">
+      <b>Wait!</b> The ranking is not ready yet. Be patient, young padawan ;)
+    </div>
+  <% end %>
 <% end %>
