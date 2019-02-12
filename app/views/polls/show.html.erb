@@ -15,7 +15,13 @@
           <% category.candidates.each do |candidate| %>
             <div class="col s12 m6 l3">
               <% selected = presenter.voted_in_candidate?(candidate.id) %>
-              <%= render 'nominee', candidate: candidate, blur: presenter.voted? && !selected, select: selected %>
+              <%=
+                render 'nominee',
+                  candidate: candidate,
+                  blur: presenter.voted? && !selected,
+                  select: selected,
+                  expired: !current_user.admin?(category) && @poll.expired?
+              %>
             </div>
           <% end %>
         </div>

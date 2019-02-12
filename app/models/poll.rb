@@ -8,4 +8,8 @@ class Poll < ApplicationRecord
 
   has_many :categories
   belongs_to :user
+
+  def expired?
+    Time.current > poll_date || closed?
+  end
 end

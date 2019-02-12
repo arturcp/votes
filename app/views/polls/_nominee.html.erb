@@ -2,9 +2,11 @@
   <div class="card-image">
     <%= image_tag candidate.image_url %>
 
-    <a class="btn-floating halfway-fab waves-effect waves-light green" data-vote-button>
-      <i class="material-icons">add</i>
-    </a>
+    <% unless expired %>
+      <a class="btn-floating halfway-fab waves-effect waves-light green" data-vote-button>
+        <i class="material-icons">add</i>
+      </a>
+    <% end %>
   </div>
 
   <div class="card-content">

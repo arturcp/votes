@@ -2,11 +2,11 @@
 
 class VotesController < ApplicationController
   def create
-    if current_user.admin?(category)
-      head :forbidden
-    else
+    if action_allowed?
       save_vote
       head :no_content
+    else
+      head :forbidden
     end
   end
 
@@ -24,6 +24,10 @@ class VotesController < ApplicationController
     @category ||= Category.find(category_id)
   end
 
+  def poll
+    @poll ||= category.poll
+  end
+
   def current_vote
     @current_vote ||= Vote.find_by(category_id: params['category_id'],
       user_id: current_user.id)
@@ -37,5 +41,9 @@ class VotesController < ApplicationController
     else
       Vote.create!(category_id: category_id, user_id: current_user.id, candidate_id: candidate_id)
     end
+  end
+
+  def action_allowed?
+    poll.opened? && !poll.expired? && !current_user.admin?(category)
   end
 end
