@@ -36,3 +36,9 @@
   color: #000;
   background-color: $primary-color;
 }
+
+.cd-main-content {
+  span.badge  {
+    float: none;
+  }
+}

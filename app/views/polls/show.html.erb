@@ -13,7 +13,7 @@
 
     <% @poll.categories.order(:created_at).each do |category| %>
       <section data-category="<%= category.id %>" data-update-url="<%= is_admin?(current_user, @poll) ? admin_results_path : votes_path %>">
-        <h5><%= category.name %></h5>
+        <h5><%= category.name %><span class="new badge red" data-badge-caption="points"><%= category.points %></span></h5>
         <% presenter_class = current_user.admin?(category) ? AdminPresenter : VotesPresenter %>
         <% presenter = presenter_class.new(current_user, category) %>
 
