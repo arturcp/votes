@@ -87,7 +87,7 @@ class Factory
     foreign_language_film.candidates.create!(name: 'Shoplifters', description: 'Japan; Hirokazu Kore-eda', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07120028/1f162b1977c22ac76f07d618c5a1770f38b9b322f3b0fc397629468ebd84739c-370x492.jpg')
 
     animated_feature_filme = poll.categories.create!(name: 'Animated feature film', points: 3)
-    animated_feature_filme.candidates.create!(name: 'Incredibles 2', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07120028/1f162b1977c22ac76f07d618c5a1770f38b9b322f3b0fc397629468ebd84739c-370x492.jpg')
+    animated_feature_filme.candidates.create!(name: 'Incredibles 2', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07101116/0477f19802ef4addb6de709967564a0cdb369947fa049a6380d6ee21a5b77f0c-370x492.jpg')
     animated_feature_filme.candidates.create!(name: 'Isle Of Dogs', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07101211/0fc3980c2d24ab2669fa2129822c9ae1818e832ae6f59bc693bdc15c738e50e1-370x492.jpg')
     animated_feature_filme.candidates.create!(name: 'Mirai', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07102606/51b048787995b86a336388439e30c9f09854dcb122b300c272ac325ede2dd0bc-370x492.jpg')
     animated_feature_filme.candidates.create!(name: 'Ralph Breaks The Internet', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07102910/ae194687429f6bb2c3cdddd3d0401915933a7018d7d9c0dc41fe25ef7b12aeb1-370x492.jpg')
@@ -101,11 +101,11 @@ class Factory
     costume_design.candidates.create!(name: 'Mary Queen of Scots', description: 'Alexandra Byrne', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/15144247/585a2cf0d69dc7097fcb0f0788ddc2363daafc301112f88ae5e030cdd8c2e919-370x492.jpg')
 
     music_original_song = poll.categories.create!(name: 'Music (original song)', points: 3)
-    music_original_song.candidates.create!(name: '"All The Stars" from Black Panther', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07134409/e0e0b612a16885b02848f38ead529fffaed84d06d9651396218a2515a73ea823-370x492.jpg')
-    music_original_song.candidates.create!(name: '"I’ll Fight" from RBG', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07111336/9588ee9645340f543ddf8f92a4bca741053304eed3532687eca9187c7a64c201-370x492.jpg')
-    music_original_song.candidates.create!(name: '"The Place Where Lost Things Go" from Mary Mary Poppings Returns', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07141601/453bd9b67b86cdbe57a9908bd2f7497739683880de7b64615723d9830666c768-370x492.jpg')
-    music_original_song.candidates.create!(name: '"Shallow" from A Star Is Born', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07132442/8207ba86b0560820430f4ec397eb4b8eb6818babf948ed57dd5a887b19d57de5-370x492.jpg')
-    music_original_song.candidates.create!(name: '"When A Cowboy Trades His Spurs For Wings" from The Ballad Of Buster Scruggs', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07143435/bdacdc4921dd1da792a73a0062c4fa5ebf93d2721684132408848d16fd5a5023-370x492.jpg')
+    music_original_song.candidates.create!(name: 'All The Stars', description: 'from Black Panther', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07134409/e0e0b612a16885b02848f38ead529fffaed84d06d9651396218a2515a73ea823-370x492.jpg')
+    music_original_song.candidates.create!(name: 'I’ll Fight', description: 'from RBG', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07111336/9588ee9645340f543ddf8f92a4bca741053304eed3532687eca9187c7a64c201-370x492.jpg')
+    music_original_song.candidates.create!(name: 'The Place Where Lost Things Go', description: 'from Mary Mary Poppings Returns', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07141601/453bd9b67b86cdbe57a9908bd2f7497739683880de7b64615723d9830666c768-370x492.jpg')
+    music_original_song.candidates.create!(name: 'Shallow', description: 'from A Star Is Born', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07132442/8207ba86b0560820430f4ec397eb4b8eb6818babf948ed57dd5a887b19d57de5-370x492.jpg')
+    music_original_song.candidates.create!(name: 'When A Cowboy Trades His Spurs For Wings', description: 'from The Ballad Of Buster Scruggs', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07143435/bdacdc4921dd1da792a73a0062c4fa5ebf93d2721684132408848d16fd5a5023-370x492.jpg')
 
     visual_effects = poll.categories.create!(name: 'Visual effects', points: 3)
     visual_effects.candidates.create!(name: 'Avengers: Infinity War', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07133256/0d91a07ac52bf1acffa1b8c0fec81b042fec2ae6a8a07881a403b68ad8cbe726-370x492.jpg')

@@ -10,7 +10,7 @@
   }
 }
 
-.cd-main-content h5 {
+.cd-main-content h3 {
   text-indent: 10px;
 }
 
@@ -33,5 +33,10 @@
 }
 
 .candidate-content {
-  min-height: 155px;
+  min-height: 190px;
+}
+
+.card .card-title {
+  font-size: 21px;
+  font-weight: bold;
 }
