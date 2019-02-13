@@ -12,7 +12,7 @@ class RankingUser
     @score += points
   end
 
-  def <=>(a, b)
-    a.score <=> b.score
+  def <=>(other)
+    other.score <=> self.score
   end
 end
