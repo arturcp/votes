@@ -39,7 +39,6 @@ fn.castVote = function(category, candidate) {
   $.ajax({
     type: 'POST',
     url: category.attr('data-update-url'),
-    async: false,
     data: {
       category_id: category.attr('data-category'),
       candidate_id: candidate.attr('data-candidate')
