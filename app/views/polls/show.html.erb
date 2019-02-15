@@ -18,7 +18,7 @@
         <% presenter = presenter_class.new(current_user, category) %>
 
         <div class="row">
-          <% category.candidates.each do |candidate| %>
+          <% category.candidates.sort_by(&:name).each do |candidate| %>
             <div class="col s12 m6 l2">
               <% selected = presenter.voted_in_candidate?(candidate.id) %>
               <%=
