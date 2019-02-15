@@ -11,10 +11,14 @@
     <% ranking_users.each_with_index do |ranking_user, index| %>
       <tr>
         <td>
-          <% if index <= 2 %>
-            <i class="material-icons">filter_<%= index + 1 %></i>
+          <% if index <= 9 %>
+            <span class="winner">
+              <%= index + 1 %>
+            </span>
           <% else %>
-            <%= index + 1 %>
+            <span>
+              <%= index + 1 %>
+            </span>
           <% end %>
         </td>
         <td><%= ranking_user.user_name %></td>
