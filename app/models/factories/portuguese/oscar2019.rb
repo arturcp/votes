@@ -111,7 +111,7 @@ module Factories
         music_original_song.candidates.create!(name: 'When A Cowboy Trades His Spurs For Wings', description: 'A Balada de Buster Scruggs', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07143435/bdacdc4921dd1da792a73a0062c4fa5ebf93d2721684132408848d16fd5a5023-370x492.jpg')
 
         visual_effects = poll.categories.create!(name: 'Efeitos Visuais', points: 3)
-        visual_effects.candidates.create!(name: 'Vinagdores: Guerra Infinita', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07133256/0d91a07ac52bf1acffa1b8c0fec81b042fec2ae6a8a07881a403b68ad8cbe726-370x492.jpg')
+        visual_effects.candidates.create!(name: 'Vingadores: Guerra Infinita', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07133256/0d91a07ac52bf1acffa1b8c0fec81b042fec2ae6a8a07881a403b68ad8cbe726-370x492.jpg')
         visual_effects.candidates.create!(name: 'Christopher Robin: Um Reencontro Inesquecível', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07135115/16539bcc574787d13053ca681e18a0393622134729b88bf280341091fe48b504-370x492.jpg')
         visual_effects.candidates.create!(name: 'O Primeiro Homem', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07140414/425b9493f58573fbe8c00917fec47d5fb12532387fa488501b9d429f5f0c0d8c-370x492.jpg')
         visual_effects.candidates.create!(name: 'Ready Player One', image_url: 'https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/01/07142706/976a1dfecebb868db21c0337ce1957cd930cab0e964442dfc6dc14f5369fa1ed-370x492.jpg')
